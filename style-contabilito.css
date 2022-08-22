@@ -23,7 +23,7 @@ body {
 #div-total-compras { 
     text-align: right;
     float: right;
-    margin-right: 20%;
+    margin-right: 69%;
     border: 1px solid;
     padding: 4px;
 }
@@ -31,7 +31,7 @@ body {
 #div-total-ventas { 
     text-align: left;
     float: left;
-    margin-left: 20%;
+    margin-left: 0%;
     border: 1px solid;
     padding: 4px;
 }
