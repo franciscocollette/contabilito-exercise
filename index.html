@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang = 'es'>
+    <head> 
+        <meta charset="UTF-8">
+        <title> CONTABILITO </title>
+        <link rel="stylesheet" href="style-contabilito.css" > 
+        <script src='script.js' defer>  </script>
+
+    </head>
+
+    <body> 
+
+    <h1> Contabilito </h1>
+
+    <div> 
+        <label for="descripcion">  Description:  </label>  
+        <input id='descripcion' type="text" name="descripcionnn" > 
+    </div>
+
+    <br>
+
+    <div> 
+        <label> Transaction tipe </label>
+        <input type="radio" name="transaccion" id="compra" value="Purchase" >  <label for="compra"> Purchase </label>
+        <input type="radio" name="transaccion" id="venta" value="Sale" >  <label for="venta"> Sale </label>
+    </div>
+
+    <br>
+
+    <div> 
+        <label> Tax type </label>
+        <input type="radio" name="iva" id="basico" value="22" >  <label for="basico"> Basic </label>
+        <input type="radio" name="iva" id="minimo" value="10" >  <label for="minimo"> Minimum </label>
+        <input type="radio" name="iva" id="exento" value="0" >  <label for="exento"> Exempt </label>
+    </div>
+    
+    <br> 
+
+    <div> 
+        <label for="subtotal">  Subtotal ($):  </label>  
+        <input id='subtotal' type="number" name="subtotall" > 
+    </div>
+
+    <br>
+
+    <div> 
+        <button type="submit" id="ingresar"> Do your thing Contabilito! </button>
+    </div>
+
+    <br> 
+
+    <table id="tabla-container"> 
+        <thead> 
+            <tr> 
+                <th> Description  </th>
+                <th> Type  </th>
+                <th> Subtotal ($) </th>
+                <th> Tax ($) </th>
+                <th> Total (Tax inc) </th>
+            </tr>
+        </thead>
+        
+            <tbody id="body-container"> 
+           
+        
+        </tbody>
+        </table>
+    
+        <br> 
+
+        <div id="div-total-ventas"> Total Sales: $ <span id="totalVentas"> </span></div>
+        <div id="div-total-compras"> Total Purchases: $ <span id="totalCompras"> </span></div>
+
+
+    </body>
+
+
+
+
+</html>
